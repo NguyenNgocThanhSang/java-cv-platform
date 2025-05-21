@@ -1,0 +1,109 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.page {
+    padding: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Navbar container */
+.navbar {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4f46e5;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+/* Nav links */
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #eef2ff;
+}
+
+/* Mobile Menu Button */
+/*.menu-btn {*/
+/*    background: none;*/
+/*    padding: 0.5rem;*/
+/*    cursor: pointer;*/
+/*    display: none;*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*.icon {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    stroke: #000; !* đảm bảo icon hiển thị màu *!*/
+/*}*/
+
+/*!* Mobile responsive *!*/
+/*@media (max-width: 640px) {*/
+/*    .menu-btn {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .links {*/
+/*        display: none;*/
+/*        flex-direction: column;*/
+/*        position: absolute;*/
+/*        top: 64px;*/
+/*        left: 0;*/
+/*        width: 100%;*/
+/*        background: #fff;*/
+/*        padding: 1rem 1.5rem;*/
+/*        align-items: flex-start; !* Canh trái *!*/
+/*    }*/
+
+/*    .links.open {*/
+/*        display: flex;*/
+/*    }*/
+
+/*    .nav-link {*/
+/*        padding: 0.75rem 0;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
