@@ -1,0 +1,28 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.loading-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.loading-bar {
+    width: 60%;
+    height: 12px;
+    background-color: #d1b3ff;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.loading-progress {
+    height: 100%;
+    background-color: #7e57c2;
+    transition: width 0.5s ease-in-out;
+}
