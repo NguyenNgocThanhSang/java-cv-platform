@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import { useState } from "react";
-import "../styles/Navigation.css"
+import "../styles/Navigation.css";
+import { NavLink as RRNavLink } from "react-router-dom";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // ---- Placeholder page components ----
 import LandingPage from "../pages/LandingPage.jsx";
@@ -15,41 +17,31 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="container">
-                {/* Left section */}
-                <Link to="/" className="logo">CV Rating Website</Link>
+                <Link to="/" className="logo">
+                    <span style={{ color: '#8b5cf6', fontWeight: 'bold' }}>Resume</span>
+                    <span style={{ color: '#000000' }}>AI</span>
+                </Link>
 
-                {/* Mobile menu button */}
-                {/*<button onClick={() => setIsOpen(!isOpen)} className="menu-btn">*/}
-                {/*    <svg*/}
-                {/*        className="icon"*/}
-                {/*        fill="none"*/}
-                {/*        stroke="currentColor"*/}
-                {/*        viewBox="0 0 24 24"*/}
-                {/*    >*/}
-                {/*        <path*/}
-                {/*            strokeLinecap="round"*/}
-                {/*            strokeLinejoin="round"*/}
-                {/*            strokeWidth="2"*/}
-                {/*            d="M4 6h16M4 12h16M4 18h16"*/}
-                {/*        />*/}
-                {/*    </svg>*/}
-                {/*</button>*/}
-
-                {/* Links */}
                 <div className={`links ${isOpen ? "open" : ""}`}>
-                    <NavLink to="/upload-cv" label="Upload CV" />
-                    <NavLink to="/cv-rating" label="CV Rating" />
-                    <NavLink to="/mock-interview" label="Mock Interview" />
+                    <NavLink to="/upload-cv" label="Hồ sơ" iconClass="bi-file-earmark-text" />
+                    <NavLink to="/cv-rating" label="Đánh giá" iconClass="bi-check2-circle" />
+                    <NavLink to="/mock-interview" label="Phỏng vấn" iconClass="bi-chat-left" />
                 </div>
             </div>
         </nav>
     );
 };
 
-const NavLink = ({ to, label }) => (
-    <Link to={to} className="nav-link">
-        {label}
-    </Link>
+const NavLink = ({ to, label, iconClass }) => (
+    <RRNavLink
+        to={to}
+        className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+        }
+    >
+        <i className={`bi ${iconClass}`}></i>
+        <span>{label}</span>
+    </RRNavLink>
 );
 
 export default function NavigateApp() {

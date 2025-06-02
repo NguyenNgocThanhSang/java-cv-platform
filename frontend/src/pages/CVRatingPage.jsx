@@ -3,6 +3,7 @@ import "../styles/CVRatingPage.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useNavigate } from "react-router-dom";
 import Loading from "../components/Loading.jsx";
+import axios from "axios";
 
 const fetchOriginalCV = () => new Promise((resolve) => {
     setTimeout(() => {
@@ -222,6 +223,15 @@ const CVRatingPage = () => {
     const [cvOriginal, setCvOriginal] = useState(null);
     const [cvSuggested, setCvSuggested] = useState(null);
 
+    //Test link frontend-backend
+    const [message, setMessage] = useState("");
+
+    useEffect(() => {
+        axios.get("/api/hello")
+            .then(res => setMessage(res.data))
+            .catch(err => console.error(err));
+    }, []);
+
     // Lấy data
     useEffect(() => {
         fetchOriginalCV().then(setCvOriginal);
@@ -257,6 +267,7 @@ const CVRatingPage = () => {
             <button className="home-button" onClick={handleBackHome}>
                 <i className="bi bi-house-door"></i> Quay về trang chủ
             </button>
+            <h1>{message}</h1>
         </div>
     );
 };
