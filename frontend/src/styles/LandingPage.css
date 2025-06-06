@@ -1,0 +1,153 @@
+.landing-page {
+    font-family: "Segoe UI", sans-serif;
+    padding: 45px 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+
+.hero {
+    margin-top: 70px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero .colored-title {
+    color: #9b87f5;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.start-btn {
+    margin-top: 20px;
+    background-color: #aa85f4;
+    color: #f8fafc;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn .arrow {
+    margin-left: 8px;
+}
+
+.start-btn:hover {
+    background-color: #aa85f4e6;
+}
+
+.features {
+    margin-top: 80px;
+}
+
+.features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #f9f9fb;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 280px;
+    text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.feature-card:hover {
+    border-color: rgb(155 135 245 / 0.5);
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.cta-section {
+    margin-top: 80px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.cta-section p {
+    margin: 15px 0 25px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.improve-btn {
+    background-color: #aa85f4;
+    color: #f8fafc;
+    padding: 10px 22px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.improve-btn:hover {
+    background-color: #aa85f4e6;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.feature-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-circle {
+    background-color: #e5deff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    font-size: 1.2rem;
+    color: #6c63ff;
+    margin: 0;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
